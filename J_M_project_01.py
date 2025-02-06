@@ -1,4 +1,4 @@
-def main():
+def greeting():
     name = "Professor Nedd"
     print("Python is a type of coding program, and it might be the easiest one of all.")
     print("What is your name, please?")
