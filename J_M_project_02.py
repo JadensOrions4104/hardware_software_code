@@ -1,4 +1,4 @@
-def greeting():        
+def conversation():
     print("Hello. I am going to ask you a series of questions so I can get to know a little more about you, if you don't mind. You can always end the conversation anytime by typing 'exit'.")
     print("What is your name, please?")
     answer = input()
@@ -19,14 +19,20 @@ def greeting():
     yes_no_talents = input().lower().strip()
     if yes_no_talents == "yes":
         print("What are they, please?")
-        talent = input()
+        answer = input()
         print ("Wow, I would love to see that in-person!")
-    elif yes_no_talents == "no":
+    elif answer == "no":
         print("Awwww, that's okay.")
     else:
         print("I can't make sense of this, sorry.")
 
-
+def main():
+    stop_loop = "no"
+    conversation()
+    while stop_loop != "yes":
+        conversation_answer = conversation()
+        print("Okay.". format(answer, conversation_answer) )
+        stop_loop = input("Type 'yes' to exit program: ").lower().strip()
     print("All responses")
     print(answer)
     print(fav_hobby)
@@ -34,13 +40,6 @@ def greeting():
     print(lucky_number)
     print(fav_animal)
     print(yes_no_talents)
-
-def main():
-    count = 0
-    run_loop = greeting()
-
-    while run_loop != 'exit':
-        run_loop = greeting()
 
 if __name__ == "__main__":
     main()

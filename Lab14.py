@@ -11,9 +11,9 @@ def binary_to_decimal():
 
 def main():
     stop_loop = "no"
-    binary_to_decimal()
+    conversation()
     while stop_loop != "yes":
-        binary_num = binary_to_decimal()
+        binary_num = conversation()
         print("Binary {} to Decimal: {}". format(num, binary_num) )
         stop_loop = input("Type 'yes' to exit program: ").lower().strip()
 
