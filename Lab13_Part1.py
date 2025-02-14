@@ -17,5 +17,5 @@ def main():
         get_largest(num1,num2)
         stop_loop = input("Type 'yes' to exit program: ").lower().strip()
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+main()
